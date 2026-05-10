@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap");
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(99, 102, 241, 0.35), transparent 24%),
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.22), transparent 26%),
+    linear-gradient(180deg, #070b15 0%, #0b1120 45%, #0f172a 100%);
+  color: #e2e8f0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 16px 48px;
+}
+
+.hero {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 30px;
+  box-shadow: 0 24px 70px rgba(2, 6, 23, 0.35);
+  padding: 24px;
+}
+
+.hero-top {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(99, 102, 241, 0.18);
+  border: 1px solid rgba(129, 140, 248, 0.35);
+}
+
+.badge.subtle {
+  background: rgba(34, 211, 238, 0.12);
+  border-color: rgba(34, 211, 238, 0.28);
+}
+
+.hero-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: clamp(40px, 9vw, 78px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.role {
+  margin: 14px 0 0;
+  color: #93c5fd;
+  font-weight: 800;
+}
+
+.summary {
+  max-width: 760px;
+  color: #cbd5e1;
+  margin: 16px 0 0;
+  line-height: 1.7;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.contact a {
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.actions a {
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-weight: 800;
+}
+
+.actions .primary {
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: #fff;
+}
+
+.actions .secondary {
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero-card {
+  display: flex;
+  align-items: stretch;
+}
+
+.glass-panel,
+.card {
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.18);
+}
+
+.glass-panel {
+  padding: 22px;
+  width: 100%;
+}
+
+.mini-label {
+  margin: 0 0 12px;
+  color: #22d3ee;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.glass-panel ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #e2e8f0;
+  line-height: 1.85;
+}
+
+.section-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  padding: 22px;
+}
+
+.card h2 {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.muted {
+  color: #94a3b8;
+}
+
+.period {
+  color: #22d3ee;
+  font-weight: 700;
+}
+
+.card ul {
+  padding-left: 18px;
+  line-height: 1.8;
+  color: #dbeafe;
+}
+
+.project {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.project-head span {
+  color: #93c5fd;
+  font-size: 0.9rem;
+}
+
+.project p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.tech {
+  color: #dbeafe;
+}
+
+.project a {
+  display: inline-flex;
+  margin-top: 4px;
+  color: #22d3ee;
+  font-weight: 800;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.16);
+  border: 1px solid rgba(129, 140, 248, 0.28);
+  font-weight: 700;
+  color: #e0e7ff;
+}
+
+.bottom {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 860px) {
+  .bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: stretch;
+  }
+
+  .section-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
