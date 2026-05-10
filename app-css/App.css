@@ -1,0 +1,42 @@
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,sans-serif;
+  background:
+    linear-gradient(135deg,#020617,#111827 55%,#0f172a),
+    radial-gradient(circle at top left, rgba(34,211,238,.18), transparent 25%);
+  color:#e5e7eb;
+}
+.cyber-page{min-height:100vh;display:grid;place-items:center;padding:24px}
+.cyber-card{
+  width:min(900px,100%);
+  padding:34px;
+  border-radius:30px;
+  border:1px solid rgba(34,211,238,.35);
+  background:rgba(2,6,23,.7);
+  box-shadow:0 0 0 1px rgba(99,102,241,.15), 0 20px 70px rgba(0,0,0,.5);
+}
+.cyber-tag{
+  display:inline-block;
+  color:#22d3ee;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  font-size:12px;
+}
+h1{
+  margin:14px 0 10px;
+  font-size:clamp(44px,8vw,88px);
+  line-height:1;
+  background:linear-gradient(90deg,#22d3ee,#a78bfa,#f472b6);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.cyber-card p{max-width:720px;color:#cbd5e1}
+.cyber-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.cyber-links a{
+  padding:12px 18px;border-radius:14px;text-decoration:none;
+  color:#fff;background:linear-gradient(135deg,#0ea5e9,#8b5cf6);
+  font-weight:800;
+}
